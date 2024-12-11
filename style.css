@@ -1338,11 +1338,14 @@ section.sec-7.abt-section-1 {
 }
 .film-div-1{
     text-align: start;
+    border: 3px solid #fff;
+    padding: 50px;
 }
 .accordion-button:not(.collapsed) {
-    color: #fff;
-    background-color: #000431;
+    color: #000431;
+    background-color: #fff;
     box-shadow: none;
+    border-bottom: 1px solid #dee2e6;
 }
 .accordion-button {
     font-size: 2rem;
@@ -1352,8 +1355,16 @@ section.sec-7.abt-section-1 {
     box-shadow: none;
 }
 .accordion-button:not(.collapsed)::after {
-    background-image: url(./img/down-arrow.png);
-    transform: var(--bs-accordion-btn-icon-transform);
+    /* background-image: url(./img/down-arrow.png);
+    transform: var(--bs-accordion-btn-icon-transform); */
+    display: none;
+}
+.accordion-button::after {
+    display: none; 
+}
+.accordion-header button{
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
 }
 .accordion-body {
     font-size: 1vw;
@@ -1379,6 +1390,9 @@ section.sec-7.abt-section-1 {
 }
 .film-div-3 p{
     font-size: 1vw;
+}
+.film-div-3 h3{
+    font-size: 2vw;
 }
 .film-div-3 a{
     background-color: #db2645;
@@ -1419,6 +1433,9 @@ section.sec-7.abt-section-1 {
 }
 .film-row-2{
     margin-bottom: 4em;
+}
+.set-film-div-1{
+    line-height: 1.1;
 }
 @media only screen and (min-width: 320px) and (max-width: 529px) {
     .ep-row-1 {
@@ -2378,6 +2395,9 @@ section.sec-7.abt-section-1 {
     .ep-div-5 h2 {
         font-size: 2.5vw;
     }
+    .accordion-body {
+        font-size: 1.2vw;
+    }
 }
 @media only screen and (min-width:1366px) and (max-width: 1439px) {
     
@@ -2415,6 +2435,9 @@ section.sec-7.abt-section-1 {
     }
     .ep-div-5 h2 {
         font-size: 2.5vw;
+    }
+    .accordion-body {
+        font-size: 1.2vw;
     }
 }
 @media only screen and (min-width: 1440px) and (max-width: 1599px) {
